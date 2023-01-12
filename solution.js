@@ -7,11 +7,11 @@
 // 1. **Addition.**
 // Schreibe ein Programm, das die Zahlen von 1 bis 20 addiert.
 
-let s = 1;
+let s = 0;
 
-for (let i = 1; i <= 19; i++) {
+for (let i = 1; i <= 20; i++) {
 
-    s = s + (i + 1);
+    s = s + i;
 }
 console.log(s);
 
@@ -54,7 +54,6 @@ for(let i=0; i<=20; i++){
 for(let i=1; i<=10; i++){
 
     console.log(`${i} * 9 = ${i * 9}`);
-    
 
 }
 
@@ -93,7 +92,7 @@ for(let i=1; i<=100; i++){
 
 let summe= 0;
 
-for(i=1; i<=1000; i++){
+for(let i=1; i<=1000; i++){
 
     if(i % 5 === 0 && i % 3 === 0) {
         summe = summe + i;
@@ -108,8 +107,19 @@ console.log(summe);
 
 // 7. Schreibe Programme, die zu folgenden Ausgaben in der Konsole führen:
 // >100 200 300 400 500 600 700 800 900 1000
+
+
+for(let i=0; i<1000; i+100){
+    i=i+100;
+    console.log(i);
+}
 // >
 // >0 2 4 6 8 10
+
+for(i=0; i<10; i+2){
+    i=i+2;
+    console.log(i);
+}
 // >
 // >3 6 9 12 15
 // >
