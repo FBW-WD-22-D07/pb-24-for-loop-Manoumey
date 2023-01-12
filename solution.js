@@ -72,9 +72,37 @@ for(let j=1; j<=10; j++){
 // Schreibe ein Programm, das die ganzen Zahlen von 1 bis 100 durchläuft. Aber für Vielfache von drei gibst du statt der Zahl "Fizz" und für Vielfache von fünf "Buzz" aus. Für Zahlen, die sowohl ein Vielfaches von drei als auch von fünf sind, gebe "FizzBuzz" aus.
 
 
+for(let i=1; i<=100; i++){
+
+    if(i % 3 === 0 && i % 5 != 0) {
+        console.log("Fizz");
+    } else if(i % 5 === 0 && i % 3 != 0) {
+        console.log("Buzz");
+    }else if(i % 5 === 0 && i % 3 === 0) {
+        console.log("Buzz");
+    } else{
+        console.log(i);
+    }
+   
+}
+
+
 
 // 6. **Summe der Vielfachen**
 // Schreibe ein Programm, um die Vielfachen von 3 und 5 unter 1000 zu addieren.
+
+let summe= 0;
+
+for(i=1; i<=1000; i++){
+
+    if(i % 5 === 0 && i % 3 === 0) {
+        summe = summe + i;
+    }
+
+}
+console.log(summe);
+
+
 
 // **Bonus**
 
